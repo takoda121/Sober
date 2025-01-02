@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2024 The Android Open Source Project
+ * Copyright (C) 2023 The Android Open Source Project
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -28,17 +28,6 @@
 
 #pragma once
 
-#if defined(__riscv)
-// TLS_DTV_OFFSET is a constant used in relocation fields, defined in RISC-V ELF Specification[1]
-// The front of the TCB contains a pointer to the DTV, and each pointer in DTV
-// points to 0x800 past the start of a TLS block to make full use of the range
-// of load/store instructions, refer to [2].
-//
-// [1]: RISC-V ELF Specification.
-// https://github.com/riscv-non-isa/riscv-elf-psabi-doc/blob/master/riscv-elf.adoc#constants
-// [2]: Documentation of TLS data structures
-// https://github.com/riscv-non-isa/riscv-elf-psabi-doc/issues/53
-#define TLS_DTV_OFFSET 0x800
-#else
-#define TLS_DTV_OFFSET 0
+#if defined(__aarch64__)
+#define OFFSETOF_libc_globals_memtag_stack 64
 #endif

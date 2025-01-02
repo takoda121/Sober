@@ -46,7 +46,7 @@ class Lock {
 
  public:
   void init(bool process_shared) {
-    atomic_store_explicit(&state, Unlocked, memory_order_relaxed);
+    atomic_init(&state, Unlocked);
     this->process_shared = process_shared;
   }
 
