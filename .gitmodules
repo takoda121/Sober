@@ -1,0 +1,21 @@
+[submodule "subprojects/liblinker/external/bionic"]
+	path = subprojects/liblinker/external/bionic
+	url = https://git.hippoz.xyz/sober/bionic
+[submodule "subprojects/liblinker/external/libbase"]
+	path = subprojects/liblinker/external/libbase
+	url = https://git.hippoz.xyz/sober/libbase
+[submodule "subprojects/liblinker/external/libziparchive"]
+	path = subprojects/liblinker/external/libziparchive
+	url = https://git.hippoz.xyz/sober/libziparchive
+[submodule "subprojects/liblinker/external/logging"]
+	path = subprojects/liblinker/external/logging
+	url = https://android.googlesource.com/platform/system/logging
+[submodule "subprojects/liblinker/external/core"]
+	path = subprojects/liblinker/external/core
+	url = https://android.googlesource.com/platform/system/core
+[submodule "subprojects/dynarmic"]
+	path = subprojects/dynarmic
+	url = https://git.hippoz.xyz/sober/dynarmic
+[submodule "src/vendor/rpmalloc"]
+	path = src/vendor/rpmalloc
+	url = https://github.com/mjansson/rpmalloc

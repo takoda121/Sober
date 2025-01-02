@@ -1,0 +1,11 @@
+[wrap-file]
+directory = dyncall-1.4
+
+source_url = https://dyncall.org/r1.4/dyncall-1.4.tar.gz
+source_filename = dyncall-1.4.tar.gz
+source_hash = 14437dbbef3b6dc92483f6507eaf825ab97964a89eecae8cb347a6bec9c32aae
+
+patch_directory = dyncall-1.4
+
+[provide]
+dyncall_s = dyncall_s_dep

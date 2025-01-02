@@ -1,0 +1,7 @@
+build/
+.cache/
+.vscode/
+x-roblox/
+
+subprojects/dyncall-1.4
+subprojects/packagecache
